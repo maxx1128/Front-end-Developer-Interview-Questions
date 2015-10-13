@@ -27,6 +27,7 @@ This file contains a number of front-end interview questions that can be used wh
 
 1. What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Which version control systems are you familiar with?
+  * Git is the major one, often used with Github or Bitbucket. SourceTree is my tool of choice to manage version control projects, will include others later.
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
