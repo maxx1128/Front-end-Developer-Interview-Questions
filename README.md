@@ -26,11 +26,30 @@ This file contains a number of front-end interview questions that can be used wh
 #### General Questions:
 
 1. What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
+
 * Which version control systems are you familiar with?
   * Git is the major one, often used with Github or Bitbucket. SourceTree is my tool of choice to manage version control projects, will include others later.
+
 * If you have 5 different stylesheets, how would you best integrate them into the site?
+  * If limited only to CSS, this would likely be done by crudely cutting and pasting. However, I'd most likely use Sass partials to merge them all together. This allows several Sass files to be quickly merged together into a single file when its converted to CSS, letting the site read the styles much faster.
+
 * Can you describe the difference between progressive enhancement and graceful degradation?
+  * **Progressive enhancement** is building a site with a widely accessible baseline of content and functionality, and only adding onto this while keeping it widely accessible across browsers and platforms. **Graceful degradation** takes the opposite approach, building a site optimized for high performance and and then including support for lower-functioning browsers and platforms.
+  * [**In short:**](http://alistapart.com/article/understandingprogressiveenhancement) Progressive enhancement is developing from the bottom up, [Graceful Degradation](http://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement) is developing from the top down. With the explosion of "mobile-first" design, the former has become more popular for many.
+
 * How would you optimize a website's assets/resources?
+  1. Limit the number of separate files and HTTP requests to them as much as possible
+  2. Use a CDN that's built for high performance, if needed
+  3. Put the CSS at the top and the Javascript at the bottom, and make them completely external
+  4. Minify both CSS and Javascript
+  5. Delay or limit the loading of heavy elements, such as images, with tools such as [lazyload.js](http://www.appelsiini.net/projects/lazyload)
+  6. Avoid redirects
+  7. Compress images to reduce file-load time, or use image sprites
+  8. Avoid redirects and iFrames
+  9. Use gzipped content
+  10. Remove any and all repetitive code, especially in Javascript
+  11. Test it on Google PageSpeed for further recommendations
+  12. [Many other things](http://www.sitepoint.com/web-site-optimization-steps/)
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
