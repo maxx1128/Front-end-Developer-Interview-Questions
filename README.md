@@ -25,7 +25,7 @@ This file contains a number of front-end interview questions that can be used wh
 
 #### General Questions:
 
-1. What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
+* What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 
 * Which version control systems are you familiar with?
   * Git is the major one, often used with Github or Bitbucket. SourceTree is my tool of choice to manage version control projects, will include others later.
@@ -42,19 +42,31 @@ This file contains a number of front-end interview questions that can be used wh
   2. Use a CDN that's built for high performance, if needed
   3. Put the CSS at the top and the Javascript at the bottom, and make them completely external
   4. Minify both CSS and Javascript
-  5. Delay or limit the loading of heavy elements, such as images, with tools such as [lazyload.js](http://www.appelsiini.net/projects/lazyload)
-  6. Avoid redirects
-  7. Compress images to reduce file-load time, or use image sprites
-  8. Avoid redirects and iFrames
-  9. Use gzipped content
-  10. Remove any and all repetitive code, especially in Javascript
-  11. Test it on Google PageSpeed for further recommendations
-  12. [Many other things](http://www.sitepoint.com/web-site-optimization-steps/)
+  5. Compress images to reduce file-load time, or use image sprites
+  6. Avoid redirects and iFrames
+  7. Use gzipped content
+  8. [Many other things](http://www.sitepoint.com/web-site-optimization-steps/)
+
 * How many resources will a browser download from a given domain at a time?
-  * What are the exceptions?
+  * IE7 allowed only two concurrent connections per host. But most browsers today allow more than that. IE8 allows 6 concurrent connections, Chrome allows 6, and Firefox allows 8.
+  * So if your web page only has 6 images, for example, then it'd really be pointless to spread your images across multiple subdomains. [Answer found here](http://stackoverflow.com/questions/9583172/how-many-resources-will-a-browser-download-from-a-given-domain-at-a-time)
+
 * Name 3 ways to decrease page load (perceived or actual load time).
+  1. Avoid any site redirects and unneeded HTTP requests. Keep all resources local, if possible.
+  2. Minify CSS and JS files and concatenate them into singular files
+  3. Delay or limit the loading of heavy elements, such as images, with tools such as [lazyload.js](http://www.appelsiini.net/projects/lazyload)
+
 * Describe how you would create a simple slideshow page.
+  * If done with a plugin, [bxSlider](http://bxslider.com/) is a free jQuery plugin that's responsive, customizable, mobile-friendly, and works with virtually all of today's browsers.
+
 * Explain the importance of standards and standards bodies.
+  * A broader explanation of web standards and why they matter [can be found here](http://www.sitepoint.com/importance-web-standards/), but the main points of the article are:
+  1. Makes websites more stable and easy to maintain
+  2. The familiar patterns and structures of standards makes development faster and debugging easier
+  3. Increases backward compatability
+  4. Improves site ranking in search engines
+  5. Makes it easier for other developers to read, understand, and customize others' code.
+
 * What is Flash of Unstyled Content? How do you avoid FOUC?
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
