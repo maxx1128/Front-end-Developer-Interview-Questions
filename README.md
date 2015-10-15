@@ -60,7 +60,7 @@ This file contains a number of front-end interview questions that can be used wh
   * If done with a plugin, [bxSlider](http://bxslider.com/) is a free jQuery plugin that's responsive, customizable, mobile-friendly, and works with virtually all of today's browsers.
 
 * Explain the importance of standards and standards bodies.
-  * A broader explanation of web standards and why they matter [can be found here](http://www.sitepoint.com/importance-web-standards/), but the main points of the article are:
+  * **A broader explanation of web standards and why they matter [can be found here](http://www.sitepoint.com/importance-web-standards/), but the main points of the article are:**
   1. Makes websites more stable and easy to maintain
   2. The familiar patterns and structures of standards makes development faster and debugging easier
   3. Increases backward compatability
