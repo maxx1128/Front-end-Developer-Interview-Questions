@@ -68,13 +68,17 @@ This file contains a number of front-end interview questions that can be used wh
   5. Makes it easier for other developers to read, understand, and customize others' code.
 
 * What is Flash of Unstyled Content? How do you avoid FOUC?
+  * The [FOUC](http://www.techrepublic.com/blog/web-designer/how-to-prevent-flash-of-unstyled-content-on-your-websites/) is when a page first loads and you see all the elements and markup before the CSS loads. This can alienate site visitors since they see a raw, jumbled version of your website and not the one you've made for them. The biggest way to avoid the FOUC is putting the <link> to your stylesheet in the document's <head> tag. The older, less common way of avoiding it is using javascript to hide page elements until the styles can be loaded.
+  
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
+  * **ARIA (Accessible Rich Internet Applications)** is a set of HTML attributes to make web content more accessible to those with disabilities, such as people using screenreaders for webpages. It allows easier access to navigation, widgets, content, and other important landmarks. **Screenreaders** allow users with visual impairments to use computers, such as by taking a webpage's code and translating information into speech (TTS). It can also give information in Braille. This technology is now more common with computers today and therefore is a higher priority for developers who want their sites to be accessible. One of the best ways to use ARIA for better accessibility is simply assigning ARIA and role attributes to elements, which give more information about them to assistive technology so they're easier to use and manage. They can even be used in CSS targeting for more accurate styling, as their values can't be repeated and provide better CSS "hooks."
+
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
 * What does CORS stand for and what issue does it address?
 
 #### HTML Questions:
 
-1. What does a `doctype` do?
+* What does a `doctype` do?
 * What's the difference between standards mode and quirks mode?
 * What's the difference between HTML and XHTML?
 * Are there any problems with serving pages as `application/xhtml+xml`?
