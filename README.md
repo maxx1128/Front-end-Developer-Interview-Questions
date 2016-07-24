@@ -58,6 +58,7 @@ This file contains a number of front-end interview questions that can be used wh
 
 * Describe how you would create a simple slideshow page.
   * If done with a plugin, [bxSlider](http://bxslider.com/) is a free jQuery plugin that's responsive, customizable, mobile-friendly, and works with virtually all of today's browsers.
+  * If not, I'd use a [custom Dot Nav component](https://codepen.io/max1128/pen/vGjPeM) I made as part of a previous pattern library.
 
 * Explain the importance of standards and standards bodies.
   * **A broader explanation of web standards and why they matter [can be found here](http://www.sitepoint.com/importance-web-standards/), but the main points of the article are:**
@@ -68,19 +69,22 @@ This file contains a number of front-end interview questions that can be used wh
   5. Makes it easier for other developers to read, understand, and customize others' code.
 
 * What is Flash of Unstyled Content? How do you avoid FOUC?
-  * The [FOUC](http://www.techrepublic.com/blog/web-designer/how-to-prevent-flash-of-unstyled-content-on-your-websites/) is when a page first loads and you see all the elements and markup before the CSS loads. This can alienate site visitors since they see a raw, jumbled version of your website and not the one you've made for them. The biggest way to avoid the FOUC is putting the <link> to your stylesheet in the document's <head> tag. The older, less common way of avoiding it is using javascript to hide page elements until the styles can be loaded.
+  * The [FOUC](http://www.techrepublic.com/blog/web-designer/how-to-prevent-flash-of-unstyled-content-on-your-websites/) is when a page first loads and you see all the elements and markup before the CSS loads. This can alienate site visitors since they see a raw, jumbled version of your website and not the one you've made for them. The biggest way to avoid the FOUC is putting the <link> to your stylesheet in the document's <head> tag. The older, less common way of avoiding it is using javascript to hide page elements until the styles can be loaded. A growing trick is to inline the most important above-the-fold styles so they load immediately, but this means they can't be saved in the cache to save time in subsequent visits.
   
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
-  * **ARIA (Accessible Rich Internet Applications)** is a set of HTML attributes to make web content more accessible to those with disabilities, such as people using screenreaders for webpages. It allows easier access to navigation, widgets, content, and other important landmarks. **Screenreaders** allow users with visual impairments to use computers, such as by taking a webpage's code and translating information into speech (TTS). It can also give information in Braille. This technology is now more common with computers today and therefore is a higher priority for developers who want their sites to be accessible. One of the best ways to use ARIA for better accessibility is simply assigning ARIA and role attributes to elements, which give more information about them to assistive technology so they're easier to use and manage. They can even be used in CSS targeting for more accurate styling, as their values can't be repeated and provide better CSS "hooks."
+  * **ARIA (Accessible Rich Internet Applications)** is a set of HTML attributes to make web content more accessible to those with disabilities, such as people using screenreaders for webpages. It allows easier access to navigation, widgets, content, and other important landmarks. **Screenreaders** allow users with visual impairments to use computers, such as by taking a webpage's code and translating information into speech (TTS). It can also give information in Braille. This technology is now more common with computers today and therefore is a higher priority for developers who want their sites to be accessible. One of the best ways to use ARIA for better accessibility is simply assigning ARIA and role attributes to elements, which give more information about them to assistive technology so they're easier to use and manage. They can even be used in CSS targeting for more accurate styling, as their values can't be repeated and provide better CSS "hooks." A more comprehensive accessibility checklist can be found [on the A11y Project.](http://a11yproject.com/checklist.html)
 
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
   * [CSS animations](https://css-tricks.com/myth-busting-css-animations-vs-javascript/) are excellent for simple animations such as transitions, can be easily integrated into many current workflows, and are fast on most browsers. However, JavaScript animations are also fast, if not faster, when not using jQuery, give more control and flexibility for playback and effects, and have more old browser support. A [quick overview](https://developers.google.com/web/fundamentals/design-and-ui/animations/css-vs-javascript?hl=en) is that CSS animations are better for simple, straightforward animations; JavaScript animations are better for more advanced and controlled animations.
 * What does CORS stand for and what issue does it address?
+  * CORS stands for "Cross Origin Resource Sharing." It addresses the issue of blocking cross-origin communication requests by giving a specification for allowing it from certain sources. [More info here.](http://www.html5rocks.com/en/tutorials/cors/)
 
 #### HTML Questions:
 
 * What does a `doctype` do?
+  * It's a small instruction for a browser about what type of HTML is being used. Has become simplified to ` <!DOCTYPE html> ` for HTML5.
 * What's the difference between standards mode and quirks mode?
+  * All three are browser modes for [interpreting pages based on web standards.](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode) "Quirks Mode" is for sites built before the adaption of web standards like IE 5, and "Full Standards" mode is for sites built with all web standards presumably in mind. There's also "Almost Full Standards," which is like Full Standards but includes a small number of quirks.
 * What's the difference between HTML and XHTML?
 * Are there any problems with serving pages as `application/xhtml+xml`?
 * How do you serve a page with content in multiple languages?
