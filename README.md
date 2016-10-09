@@ -86,6 +86,7 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between standards mode and quirks mode?
   * All three are browser modes for [interpreting pages based on web standards.](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode) "Quirks Mode" is for sites built before the adaption of web standards like IE 5, and "Full Standards" mode is for sites built with all web standards presumably in mind. There's also "Almost Full Standards," which is like Full Standards but includes a small number of quirks.
 * What's the difference between HTML and XHTML?
+  * XHTML is almost identical to HTML, but has much [stricter standards](https://www.sitepoint.com/web-foundations/differences-html-xhtml/) with elements like closing tags, case-sensitive attributes, and nesting. This is to help prevent poorly-written HTML from appearing in web pages.
 * Are there any problems with serving pages as `application/xhtml+xml`?
 * How do you serve a page with content in multiple languages?
 * What kind of things must you be wary of when design or developing for multilingual sites?
