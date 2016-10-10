@@ -88,7 +88,12 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between HTML and XHTML?
   * XHTML is almost identical to HTML, but has much [stricter standards](https://www.sitepoint.com/web-foundations/differences-html-xhtml/) with elements like closing tags, case-sensitive attributes, and nesting. This is to help prevent poorly-written HTML from appearing in web pages.
 * Are there any problems with serving pages as `application/xhtml+xml`?
+  * While this ensures browsers will read your XHTML files as such, and not as HTML files, there are [several risks](http://www.xml.com/pub/a/2003/03/19/dive-into-xml.html). The most noticeable ones are:
+  1. If your files don't match the XHTML syntax right, the page won't display.
+  2. #NotAllBrowsers can handle this MIME type, so the page also needs to be readable as `text/html`.
+  3. CSS and JS for XHTML/XML pages are case-sensitive, which should be taken into account for included assets.
 * How do you serve a page with content in multiple languages?
+  * Use the `lang` attribute to set the language for a page or component. For example, a webpage initially in English should include the `lang="en"` attribute in the `<html>` tag. If an article in that page is written in Italian, the opening tag would include the same attribute: `<article lang="it">`.
 * What kind of things must you be wary of when design or developing for multilingual sites?
 * What are `data-` attributes good for?
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
