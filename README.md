@@ -95,6 +95,11 @@ This file contains a number of front-end interview questions that can be used wh
 * How do you serve a page with content in multiple languages?
   * Use the `lang` attribute to set the language for a page or component. For example, a webpage initially in English should include the `lang="en"` attribute in the `<html>` tag. If an article in that page is written in Italian, the opening tag would include the same attribute: `<article lang="it">`.
 * What kind of things must you be wary of when design or developing for multilingual sites?
+  * Making sure content in different languages matches the `lang` attribute
+  * Seeing if popular search terms are the same or different in other languages
+  * Different languages being hosted in subsections or subdomains
+  * Pages loaded on the same or a proxy server
+  * Automating translations, doing them by hand, or open-sourcing them
 * What are `data-` attributes good for?
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
