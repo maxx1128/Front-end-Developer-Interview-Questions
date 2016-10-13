@@ -101,7 +101,11 @@ This file contains a number of front-end interview questions that can be used wh
   * Pages loaded on the same or a proxy server
   * Automating translations, doing them by hand, or open-sourcing them
 * What are `data-` attributes good for?
+  * `data-` attributes are good for [storing custom data values](http://www.w3schools.com/tags/att_global_data.asp) for pages or components. These can be easily used by the site's Javascript for more engaging and specific interactions, based on the attributes' values. They're also better used with Javascript than class names, since it's a better separation of concerns between display and functionality.
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
+  * __Canvas__ for dynamic, graphical elements, such as basic animations or signature fields.
+  * __Video__ for a standard video player with playback controls. It can also be controlled through JavaScript.
+  * __Semantic containers__ such as `section` and `article` which give the browser more useful information about the content in each. Helps maintain higher standards for accessibility and page architecture.
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
 * Describe the difference between `<script>`, `<script async>` and `<script defer>`.
 * Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
