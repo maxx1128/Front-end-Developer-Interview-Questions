@@ -107,6 +107,10 @@ This file contains a number of front-end interview questions that can be used wh
   * __Video__ for a standard video player with playback controls. It can also be controlled through JavaScript.
   * __Semantic containers__ such as `section` and `article` which give the browser more useful information about the content in each. Helps maintain higher standards for accessibility and page architecture.
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
+  * The basic differences between the three are as follows:
+  * __Cookies__ are simple string variables stored in a browser across different sessions. They're also more easily tampered with by the users or intercepted by other parties.
+  * __sessionStorage__ can store more complex JavaScript, but only lasts for a single session (erases when the browser is closed). Not supported by all browsers.
+  * __localStorage__ can store more complex JavaScript that can be stored in a browser across sessions. Not supported by all browsers.
 * Describe the difference between `<script>`, `<script async>` and `<script defer>`.
 * Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 * What is progressive rendering?
