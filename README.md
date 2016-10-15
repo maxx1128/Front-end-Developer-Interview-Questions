@@ -112,6 +112,9 @@ This file contains a number of front-end interview questions that can be used wh
   * __sessionStorage__ can store more complex JavaScript, but only lasts for a single session (erases when the browser is closed). Not supported by all browsers.
   * __localStorage__ can store more complex JavaScript that can be stored in a browser across sessions. Not supported by all browsers.
 * Describe the difference between `<script>`, `<script async>` and `<script defer>`.
+  * __script__ loads a script but stops the HTML parsing, and possibly delaying the webpage. These tags are often placed in the footer, after everything else, to avoid this problem.
+  * __script async__ loads the script while the HTML continues to load, and executes the script whenever it's ready. Good for scripts that don't affect the HTML itself, such as analytics.
+  * __script defer__ delays the script load until the HTML is finished parsing. Good since it means the DOM is ready. Bad since it doesn't have full browser support.
 * Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 * What is progressive rendering?
 
