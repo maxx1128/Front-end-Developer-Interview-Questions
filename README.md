@@ -116,7 +116,10 @@ This file contains a number of front-end interview questions that can be used wh
   * __script async__ loads the script while the HTML continues to load, and executes the script whenever it's ready. Good for scripts that don't affect the HTML itself, such as analytics.
   * __script defer__ delays the script load until the HTML is finished parsing. Good since it means the DOM is ready. Bad since it doesn't have full browser support.
 * Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
+  * Putting the CSS `<link>`s in the header allows the HTML content to appear as it becomes available, which gives the user active feedback about how fast the webpage is loading. Putting it lower on the page often blocks this feature, and users see a blank page while it loads.
+  * Putting the JS `<script>`s at the bottom stops the JS from blocking the load, since JS loads after the page has. This is good since browsers almost always have a limit of how many JS files can load in parallel, which can greatly delay the page load. An alternative to this would be using deferred scripts, but these don't have enough browser support.
 * What is progressive rendering?
+  * Progressive rendering means the browser renders all the content as it becomes available, as soon as it can.
 
 #### CSS Questions:
 
