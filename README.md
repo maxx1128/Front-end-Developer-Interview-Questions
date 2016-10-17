@@ -124,6 +124,7 @@ This file contains a number of front-end interview questions that can be used wh
 #### CSS Questions:
 
 1. What is the difference between classes and ID's in CSS?
+  * Class values can be used multiple times on an HTML page, and IDs can only be used one per page. However IDs have a much higher specificity, so CSS applied with an ID will more easily override other styles. But in the interest of keeping CSS specificity more equal (so there's fewer unexpected overrides), and in case styles need to be used more than once, styling with IDs is strongly discouraged.
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 * Describe Floats and how they work.
 * Describe z-index and how stacking context is formed.
