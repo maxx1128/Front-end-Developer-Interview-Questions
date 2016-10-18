@@ -126,6 +126,7 @@ This file contains a number of front-end interview questions that can be used wh
 1. What is the difference between classes and ID's in CSS?
   * Class values can be used multiple times on an HTML page, and IDs can only be used one per page. However IDs have a much higher specificity, so CSS applied with an ID will more easily override other styles. But in the interest of keeping CSS specificity more equal (so there's fewer unexpected overrides), and in case styles need to be used more than once, styling with IDs is strongly discouraged.
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+  * The basic difference is that "resetting" removes all default browser CSS, while "normalizing" it makes it consistent across browsers. Normalize does this by preserving several defaults, corrects common bugs, and can be fine-tuned for normalizing specific elements. However, normalize CSS can include more code that must be overridden later. I would personally choose Normalize.css over a CSS Reset, since it solves common cross-browser issues and makes cross-browser development easier, which outweighs the fact it may be more code to deal with than a CSS Reset.
 * Describe Floats and how they work.
 * Describe z-index and how stacking context is formed.
 * Describe BFC(Block Formatting Context) and how it works.
