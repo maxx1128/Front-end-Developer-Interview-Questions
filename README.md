@@ -128,7 +128,9 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
   * The basic difference is that "resetting" removes all default browser CSS, while "normalizing" it makes it consistent across browsers. Normalize does this by preserving several defaults, corrects common bugs, and can be fine-tuned for normalizing specific elements. However, normalize CSS can include more code that must be overridden later. I would personally choose Normalize.css over a CSS Reset, since it solves common cross-browser issues and makes cross-browser development easier, which outweighs the fact it may be more code to deal with than a CSS Reset.
 * Describe Floats and how they work.
+  * CSS floats push an element to the left or right while keeping them in the flow of the page's elements. This makes them go as far in one direction as possible and elements flow around them, like text flowing around an image. They're frequently used in positioning elements around text, like the above example, or creating entire page layouts with columns in rows. Floats are best paired with "clears," which will move elements (or the floated element's container) below the floated element.
 * Describe z-index and how stacking context is formed.
+  * z-index is set whenever elements overlap, which is common with elements within other elements or absolute positioning. A specific z-index value can be set, but only for elements that have been assigned a "position" property-value pair.
 * Describe BFC(Block Formatting Context) and how it works.
 * What are the various clearing techniques and which is appropriate for what context?
 * Explain CSS sprites, and how you would implement them on a page or site.
