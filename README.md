@@ -132,7 +132,9 @@ This file contains a number of front-end interview questions that can be used wh
 * Describe z-index and how stacking context is formed.
   * z-index is set whenever elements overlap, which is common with elements within other elements or absolute positioning. A specific z-index value can be set, but only for elements that have been assigned a "position" property-value pair.
 * Describe BFC(Block Formatting Context) and how it works.
+  * A BFC is what controls the layout of an element's child elements. Whenever [one of many properties](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) are applied to a container, it establishes a new BFC for its child elements based on that property. For example, using `overflow: hidden` or `display: inline block` on a container creates a new BFC for all the children in that element. It's important for understanding how elements are being organized, and how this changes in different site containers.
 * What are the various clearing techniques and which is appropriate for what context?
+  * There are two common ways to clear an element, and all involve using the `clear` CSS property. The first is creating a separate class with `clear`, and adding this class to the container of the floated elements. The second is creating a mixin with the `clear` properties attached and using it on the container element. It's usually better to use the second, since it needs fewer classes and keeps the HTML markup cleaner.
 * Explain CSS sprites, and how you would implement them on a page or site.
 * What are your favourite image replacement techniques and which do you use when?
 * How would you approach fixing browser-specific styling issues?
