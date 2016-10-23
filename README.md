@@ -136,7 +136,8 @@ This file contains a number of front-end interview questions that can be used wh
 * What are the various clearing techniques and which is appropriate for what context?
   * There are two common ways to clear an element, and all involve using the `clear` CSS property. The first is creating a separate class with `clear`, and adding this class to the container of the floated elements. The second is creating a mixin with the `clear` properties attached and using it on the container element. It's usually better to use the second, since it needs fewer classes and keeps the HTML markup cleaner.
 * Explain CSS sprites, and how you would implement them on a page or site.
-* What are your favourite image replacement techniques and which do you use when?
+  * CSS sprites are when many images are grouped together into a single image, and then different sections of that image are shown throughout the page. So an image sprite with three images will be loaded once, used three times on a page, but time it's used only one different part of that image is visible. This way multiple images are shown while only loading one. A way I've made it before was through a npm module through gulp, (gulp-sprite)[https://www.npmjs.com/package/gulp-sprite], which generates the image sprite and needed CSS automatically.
+* What are your favorite image replacement techniques and which do you use when?
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
