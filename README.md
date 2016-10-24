@@ -138,6 +138,11 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain CSS sprites, and how you would implement them on a page or site.
   * CSS sprites are when many images are grouped together into a single image, and then different sections of that image are shown throughout the page. So an image sprite with three images will be loaded once, used three times on a page, but time it's used only one different part of that image is visible. This way multiple images are shown while only loading one. A way I've made it before was through a npm module through gulp, (gulp-sprite)[https://www.npmjs.com/package/gulp-sprite], which generates the image sprite and needed CSS automatically.
 * What are your favorite image replacement techniques and which do you use when?
+  * The three [techniques](https://css-tricks.com/css-image-replacement/) I've used most in the past are:
+    1. Showing the image and text together, but hiding the text itself.
+    2. Putting the text and image in a large box, and only making the part with the image visible.
+    3. Same as the above, but moving the text off-screen with a large text-indent instead.
+  * In almost all situations now I use the third technique, since it's easier to execute and use in complex layouts. Especially if accessibility is a high priority, since the first technique is good but hides the text for screen readers.
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
