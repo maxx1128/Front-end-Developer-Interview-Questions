@@ -144,6 +144,9 @@ This file contains a number of front-end interview questions that can be used wh
     3. Same as the above, but moving the text off-screen with a large text-indent instead.
   * In almost all situations now I use the third technique, since it's easier to execute and use in complex layouts. Especially if accessibility is a high priority, since the first technique is good but hides the text for screen readers.
 * How would you approach fixing browser-specific styling issues?
+  1. I'd check caniuse.com to see if it's already a documented browser issue, since it would quickly explain the issue and a possible solution or workaround.
+  2. If that still didn't work, I'd use the browser inspector to directly find and solve the problem through some trial-and-error.
+  3. If none of that work, I'd take a graceful degradation approach and make sure the styles for that browser were still presentable and functional.
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
 * What are the different ways to visually hide content (and make it available only for screen readers)?
