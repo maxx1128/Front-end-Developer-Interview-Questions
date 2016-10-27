@@ -148,7 +148,7 @@ This file contains a number of front-end interview questions that can be used wh
   2. If that still didn't work, I'd use the browser inspector to directly find and solve the problem through some trial-and-error.
   3. If none of that work, I'd take a graceful degradation approach and make sure the styles for that browser were still presentable and functional.
 * How do you serve your pages for feature-constrained browsers?
-  * What techniques/processes do you use?
+  * I usually aim for a _grace degradation_ approach, so browsers without certain features will fall back to one with wider support. I normally do this with the Modernizr tool for targeted feature testing. However I've read about @supports which allows for feature testing without any JS or CSS add-ons, and will likely experiment with that the next time I write CSS that needs to degrade gracefully.
 * What are the different ways to visually hide content (and make it available only for screen readers)?
 * Have you used or implemented media queries or mobile specific layouts/CSS?
 * Are you familiar with styling SVG?
