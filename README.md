@@ -150,6 +150,13 @@ This file contains a number of front-end interview questions that can be used wh
 * How do you serve your pages for feature-constrained browsers?
   * I usually aim for a _grace degradation_ approach, so browsers without certain features will fall back to one with wider support. I normally do this with the Modernizr tool for targeted feature testing. However I've read about @supports which allows for feature testing without any JS or CSS add-ons, and will likely experiment with that the next time I write CSS that needs to degrade gracefully.
 * What are the different ways to visually hide content (and make it available only for screen readers)?
+  * Some [popular techniques](http://webaim.org/techniques/css/invisiblecontent/) to hide content for users not using screen readers are:
+    1. Using a very large text indent to force it off the visible screen
+    2. Using absolute positioning to force it off the visible screen 
+    3. Using a CSS Clip
+  * Techniques that hide it from all users, screen readers included, that __shouldn't__ be used are:
+    1. Using `display: none`
+    2. Setting the `width` and `height` to zero 
 * Have you used or implemented media queries or mobile specific layouts/CSS?
 * Are you familiar with styling SVG?
 * How do you optimize your webpages for print?
