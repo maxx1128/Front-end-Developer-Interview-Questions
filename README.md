@@ -158,6 +158,7 @@ This file contains a number of front-end interview questions that can be used wh
     1. Using `display: none`
     2. Setting the `width` and `height` to zero 
 * Have you used or implemented media queries or mobile specific layouts/CSS?
+  * Yes, I've regularly used media queries for mobile layouts. Preferred strategy is to write CSS with mobile styles as the base, and then use media queries for larger widths so they adjust for tablet and desktop screens. The breakpoints and media queries themselves are best used as mixins to save time and easily adjust breakpoint widths as needed. I've used several grid frameworks in the past, including Susy and Bourbon, for both responsive layouts and media queries in general.
 * Are you familiar with styling SVG?
 * How do you optimize your webpages for print?
 * What are some of the "gotchas" for writing efficient CSS?
