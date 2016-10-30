@@ -160,10 +160,20 @@ This file contains a number of front-end interview questions that can be used wh
 * Have you used or implemented media queries or mobile specific layouts/CSS?
   * Yes, I've regularly used media queries for mobile layouts. Preferred strategy is to write CSS with mobile styles as the base, and then use media queries for larger widths so they adjust for tablet and desktop screens. The breakpoints and media queries themselves are best used as mixins to save time and easily adjust breakpoint widths as needed. I've used several grid frameworks in the past, including Susy and Bourbon, for both responsive layouts and media queries in general.
 * Are you familiar with styling SVG?
+  * __Revisit this later!__
 * How do you optimize your webpages for print?
+  * __Revisit this later!__
 * What are some of the "gotchas" for writing efficient CSS?
+  * Most relate to writing better CSS selectors:
+    * Use class names for styling instead of base elements or IDs, since they have more equal specificity and allow for better modular use
+    * Don't use *, the universal selector
+    * Use a naming convention, such as BEM, for consistency and structure that helps avoid specificity issues
+    * Avoid nested selectors, since they can cause specificity creep that makes it incredibly difficult to override styles (often in unexpected places)
 * What are the advantages/disadvantages of using CSS preprocessors?
-  * Describe what you like and dislike about the CSS preprocessors you have used.
+  * For me the advantages of preprocessors (in this case Sass) are better organization by breaking a CSS into partial, using variables for reused values, using mixins and functions for easier and faster styling of otherwise complex components, and the increased modularity of Sass files.
+  * The disadvantages are setting up a workflow for the preprocessor (such as Gulp), and having to use a new syntax. However, for me the benefits far outweigh the costs.
+  * _Describe what you like and dislike about the CSS preprocessors you have used._
+    * I like how it makes it easier to reduce redundant, such as using Sass maps and loops to generate styles that are otherwise the same but with only a few different variables. It also makes managing and changing reused values, such as a site color palette, much easier. I also greatly enjoy using different file architectures, since they help makes styles much more organized, less likely to conflict, and easier to reference and combine in the HTML. My only major dislike has been debugging issues without seeing the exact cause, like having to look through a partial for a syntax error without knowing the precise location. However this has always been worth the better organization and control.
 * How would you implement a web design comp that uses non-standard fonts?
 * Explain how a browser determines what elements match a CSS selector.
 * Describe pseudo-elements and discuss what they are used for. 
