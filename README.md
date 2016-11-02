@@ -177,6 +177,7 @@ This file contains a number of front-end interview questions that can be used wh
 * How would you implement a web design comp that uses non-standard fonts?
   * I would import the font files with CSS. Once I had the font files in the needed formats (eot, woff, ttf, svg), or if I could use a web font service such as Google Fonts, I'd import them with `@font-face`. I have experience with both, but if there's extra space in the site's performance budget and offline performance isn't a high priority, I prefer using a web font since it's more convenient and requires fewer assets.
 * Explain how a browser determines what elements match a CSS selector.
+  * The browser matches the CSS selector by going right to left. So the selector `.class-1 .class-2 .class-3` will start by looking for `.class-3` in the DOM, then seeing if there's a `.class-2` higher up in the DOM branch. This makes the work along the DOM proportional to the most specific selector. Going from left to right will require more traversing with less chance of finding a selector, and means more calculations with less results.
 * Describe pseudo-elements and discuss what they are used for. 
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
