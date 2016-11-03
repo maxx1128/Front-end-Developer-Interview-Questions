@@ -178,7 +178,12 @@ This file contains a number of front-end interview questions that can be used wh
   * I would import the font files with CSS. Once I had the font files in the needed formats (eot, woff, ttf, svg), or if I could use a web font service such as Google Fonts, I'd import them with `@font-face`. I have experience with both, but if there's extra space in the site's performance budget and offline performance isn't a high priority, I prefer using a web font since it's more convenient and requires fewer assets.
 * Explain how a browser determines what elements match a CSS selector.
   * The browser matches the CSS selector by going right to left. So the selector `.class-1 .class-2 .class-3` will start by looking for `.class-3` in the DOM, then seeing if there's a `.class-2` higher up in the DOM branch. This makes the work along the DOM proportional to the most specific selector. Going from left to right will require more traversing with less chance of finding a selector, and means more calculations with less results.
-* Describe pseudo-elements and discuss what they are used for. 
+* Describe pseudo-elements and discuss what they are used for.
+  * Pseudo-elements are extra identifiers after CSS selectors, with two colons after (`.selector::pseudo-element`). They can be used to style:
+    * Specified parts of an element, such as the first line
+    * Different element states, such as `::hover`
+    * A specific selection of a collection of adjacent elements, like all the odd elements in a group, the first three items, or even more complexly selected ones
+    * `::before` and `::after` elements, which can create elements around the selected one via CSS. These can be empty, text, images, or others.
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
 * List as many values for the display property that you can remember.
