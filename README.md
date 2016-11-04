@@ -185,6 +185,12 @@ This file contains a number of front-end interview questions that can be used wh
     * A specific selection of a collection of adjacent elements, like all the odd elements in a group, the first three items, or even more complexly selected ones
     * `::before` and `::after` elements, which can create elements around the selected one via CSS. These can be empty, text, images, or others.
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
+  * The CSS box model is how the browser sees different spacing arrangements of a container. It has four parts:
+    * The content in the box
+    * The padding, which is the spacing inside the content but still inside the container
+    * The border that's the boundary of the container
+    * The margin, which is the spacing outside the container
+  * This can be altered by changing the `box-sizing` property of an element. 
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
 * List as many values for the display property that you can remember.
 * What's the difference between inline and inline-block?
