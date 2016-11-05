@@ -192,6 +192,7 @@ This file contains a number of front-end interview questions that can be used wh
     * The margin, which is the spacing outside the container
   * This can be altered by changing the `box-sizing` property of an element. 
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
+  * Normally, adding padding increases the previously calculated width and height of a container. Adding `box-sizing: border-box` means the padding doesn't change the height and width, instead shrinking the content area. It's good if you don't want to disturb the dimensions, like if it's part of a layout, and can help separate the border from the content.
 * List as many values for the display property that you can remember.
 * What's the difference between inline and inline-block?
 * What's the difference between a relative, fixed, absolute and statically positioned element?
