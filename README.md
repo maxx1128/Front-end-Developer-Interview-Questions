@@ -194,7 +194,9 @@ This file contains a number of front-end interview questions that can be used wh
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
   * Normally, adding padding increases the previously calculated width and height of a container. Adding `box-sizing: border-box` means the padding doesn't change the height and width, instead shrinking the content area. It's good if you don't want to disturb the dimensions, like if it's part of a layout, and can help separate the border from the content.
 * List as many values for the display property that you can remember.
+  * Block, inline-block, block, none, flex, inline-flex, list-item, table table-cell, table-row, table-column, initial, inherit, run-in.
 * What's the difference between inline and inline-block?
+  * Both can flow within text or around other elements, but inline-blocks can have their width and height set to specific values.
 * What's the difference between a relative, fixed, absolute and statically positioned element?
 * The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
 * What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
