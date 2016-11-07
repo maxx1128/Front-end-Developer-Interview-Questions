@@ -198,6 +198,10 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between inline and inline-block?
   * Both can flow within text or around other elements, but inline-blocks can have their width and height set to specific values.
 * What's the difference between a relative, fixed, absolute and statically positioned element?
+  * Static: Is the default, where elements render based on their order in the HTML. 
+  * Relative: Positioned relative to the normal position it would have for `static`.
+  * Fixed: Positioned relative to the browser window
+  * Absolute: Positioned relative to the parent container (if they have relative positioning).
 * The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
 * What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
 * Have you played around with the new CSS Flexbox or Grid specs?
