@@ -203,6 +203,9 @@ This file contains a number of front-end interview questions that can be used wh
   * Fixed: Positioned relative to the browser window
   * Absolute: Positioned relative to the parent container (if they have relative positioning).
 * The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
+  * The two main factors in deciding priority is `weight` and `order`.
+    * __Weight__ is the level of importance in a selector. Styles in selectors with a greater weight will override styles in selectors with less weight. For example, classes have less weight than IDs. So when adjusting an element's width with a class and ID, the width in the ID selector will override it. The general order of selectors, from lightest to heaviest, is element tags, classes, IDs, inline styles, and styles with `!important`.
+    * __Order__ kicks in when there's multiple styles with the same weight. In this case, the styles written later in the file will be used. So with two selectors that each use a class to change the width, the styles with the class selector written twice will be used. This is where the "Cascading" part of CSS comes into play the most.
 * What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
 * Have you played around with the new CSS Flexbox or Grid specs?
 * How is responsive design different from adaptive design?
