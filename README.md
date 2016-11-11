@@ -211,6 +211,7 @@ This file contains a number of front-end interview questions that can be used wh
 * Have you played around with the new CSS Flexbox or Grid specs?
   * I've frequently used Flexbox in my personal and professional work, as it solves a number of modular layout issues I'd previously had issues with. I've also made a Sass grid system based off Flexbox, so I consider myself fairly competent with it. I've researched and experimented with CSS Grid, although the lack of clarity about when it'll receive full browser support has hampered my enthusiasm a little. But I'm still reading Rachel Andrew's continuing work about the basics and practical uses of the grid system so I'll be prepared right when it's ready for production work.
 * How is responsive design different from adaptive design?
+  * Responsive design is more fluid, with elements actively changing for all possible screen widths (with a possible maximum width). Adaptive design is set to change at specific breakpoints, often in line with popular device dimensions. A good way to quickly see the difference is to resize the screen and see how elements react: responsive designs will move and change constantly as the screen resizes; adaptive designs will stay the same most of the time, with all the content centering in the screen's extra space, and then changing at specific widths.
 * Have you ever worked with retina graphics? If so, when and what techniques did you use?
 * Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
 
