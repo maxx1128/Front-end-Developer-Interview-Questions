@@ -213,6 +213,7 @@ This file contains a number of front-end interview questions that can be used wh
 * How is responsive design different from adaptive design?
   * Responsive design is more fluid, with elements actively changing for all possible screen widths (with a possible maximum width). Adaptive design is set to change at specific breakpoints, often in line with popular device dimensions. A good way to quickly see the difference is to resize the screen and see how elements react: responsive designs will move and change constantly as the screen resizes; adaptive designs will stay the same most of the time, with all the content centering in the screen's extra space, and then changing at specific widths.
 * Have you ever worked with retina graphics? If so, when and what techniques did you use?
+  * I've never used retina graphics, or queries to display high quality graphics for higher resolution devices, since the requirements for it haven't yet come up in my projects. However I'm familiar with the need for them to improve a user's visual experience when they're using higher-quality devices.
 * Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
 
 #### JS Questions:
