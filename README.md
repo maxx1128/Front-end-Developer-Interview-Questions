@@ -215,6 +215,7 @@ This file contains a number of front-end interview questions that can be used wh
 * Have you ever worked with retina graphics? If so, when and what techniques did you use?
   * I've never used retina graphics, or queries to display high quality graphics for higher resolution devices, since the requirements for it haven't yet come up in my projects. However I'm familiar with the need for them to improve a user's visual experience when they're using higher-quality devices.
 * Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
+  * Normally I stick to absolute positioning, but would go to `translate()` if any animations were needed, performance were an especially high priority, or didn't want to completely remove the transformed object from the flow of the DOM (and not change the space it originally took up). I'd specifically want to use absolute positioning if I needed to change the elements size according to the parent element, like by using `left: 0; right: 0;` to take up its full width.
 
 #### JS Questions:
 
