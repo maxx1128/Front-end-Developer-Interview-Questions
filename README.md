@@ -220,6 +220,8 @@ This file contains a number of front-end interview questions that can be used wh
 #### JS Questions:
 
 1. Explain event delegation
+  * [Event delegation](https://www.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/) is a way to trigger events for different child elements of a parent element, but without creating event handlers for each one. In essence it's setting up different events for the child elements, but the only event handler is technically from the parent element. For instance, if multiple inputs in a form trigger different events, event delegation lets us set up just one event handler from the form container.
+  * The benefits are fewer event handlers, which boosts performance, and it works with dynamically generated elements (such as ones via AJAX). The downsides are not all elements are supported, and some events risk event bottlenecks (too many being triggered), but these can usually be avoided with proper foresight.
 * Explain how `this` works in JavaScript
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
