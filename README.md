@@ -1,5 +1,7 @@
 # Front-end Job Interview Questions
 
+<!-- https://quizlet.com/28293152/front-end-interview-questions-css-flash-cards/ -->
+
 This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
 
 **Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
@@ -223,6 +225,7 @@ This file contains a number of front-end interview questions that can be used wh
   * [Event delegation](https://www.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/) is a way to trigger events for different child elements of a parent element, but without creating event handlers for each one. In essence it's setting up different events for the child elements, but the only event handler is technically from the parent element. For instance, if multiple inputs in a form trigger different events, event delegation lets us set up just one event handler from the form container.
   * The benefits are fewer event handlers, which boosts performance, and it works with dynamically generated elements (such as ones via AJAX). The downsides are not all elements are supported, and some events risk event bottlenecks (too many being triggered), but these can usually be avoided with proper foresight.
 * Explain how `this` works in JavaScript
+  * `this` is a reference to the current element being targeted in a function or loop. It's an easy way to target active elements in the DOM on a case-by-case basis. For example, for click events on `.element` selector, using `this` will only effect the element the user clicked on, not every `.element` selected in the DOM. Plus for each loops going through every `.element` in the DOM, using `this` will only target the element in the individual loop.
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
