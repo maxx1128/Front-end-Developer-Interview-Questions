@@ -227,6 +227,7 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain how `this` works in JavaScript
   * `this` is a reference to the current element being targeted in a function or loop. It's an easy way to target active elements in the DOM on a case-by-case basis. For example, for click events on `.element` selector, using `this` will only effect the element the user clicked on, not every `.element` selected in the DOM. Plus for each loops going through every `.element` in the DOM, using `this` will only target the element in the individual loop.
 * Explain how prototypal inheritance works
+  * PI is similar to how classes are inherited in CSS - if an element has two classes, it inherits the styles from both. PI works similarly, but for objects - setting Object1 as a prototype for Object2 means Object2 inherits the properties of Object1. So if a value or function being called from Object2 isn't there, it'll then look in its prototype, Object1, and use it if it's there. More specifics on using it can be found [here](http://javascript.info/tutorial/inheritance). 
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   * What needs to be changed to properly make it an IIFE?
