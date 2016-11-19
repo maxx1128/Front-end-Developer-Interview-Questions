@@ -230,8 +230,8 @@ This file contains a number of front-end interview questions that can be used wh
   * PI is similar to how classes are inherited in CSS - if an element has two classes, it inherits the styles from both. PI works similarly, but for objects - setting Object1 as a prototype for Object2 means Object2 inherits the properties of Object1. So if a value or function being called from Object2 isn't there, it'll then look in its prototype, Object1, and use it if it's there. More specifics on using it can be found [here](http://javascript.info/tutorial/inheritance). 
 * What do you think of AMD vs CommonJS?
   * I've used only CommonJS for my javascript work, mainly since it heavily inspired how Node.JS manages dependencies and is a frequent tool of mine (also Browserify, which I've used but less often). I've researched AMD and still prefer CommonJS for its simpler syntax and integrated dependency management. However if asynchronous module loading becomes a project priority, I would try moving to AMD for it since that's the main difference between the two.
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
+* Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?
+  * This doesn't work as an Immediately-Invoked Function Expression since their syntax requires parenthesis to be wrapped around it. In this case you could write the function as `(function foo(){ }());` or `(function foo(){ })();` and it would then work as an IIFE.
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
   * How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
