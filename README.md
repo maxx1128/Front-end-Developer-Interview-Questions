@@ -232,8 +232,10 @@ This file contains a number of front-end interview questions that can be used wh
   * I've used only CommonJS for my javascript work, mainly since it heavily inspired how Node.JS manages dependencies and is a frequent tool of mine (also Browserify, which I've used but less often). I've researched AMD and still prefer CommonJS for its simpler syntax and integrated dependency management. However if asynchronous module loading becomes a project priority, I would try moving to AMD for it since that's the main difference between the two.
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?
   * This doesn't work as an Immediately-Invoked Function Expression since their syntax requires parenthesis to be wrapped around it. In this case you could write the function as `(function foo(){ }());` or `(function foo(){ })();` and it would then work as an IIFE.
-* What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
+* What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for any of these states?
+  * **Null:** a purposeful value assigned to a variable, synonymous with "empty." Simple check: `if ( var === null )`.
+  * **Undefined:** a variable that's been declared but not defined, so it has no value associated with it at all. Simple check: `if ( var == undefined )`.
+  * **Undeclared:** a variable that's been created without the `var` keyword, and will usually operate on the global scope instead of any intended limited scope, such as a function. Will usually throw an error, or can be checked with `console.log(var)` to test returned value.
 * What is a closure, and how/why would you use one?
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
