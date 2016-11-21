@@ -237,6 +237,7 @@ This file contains a number of front-end interview questions that can be used wh
   * **Undefined:** a variable that's been declared but not defined, so it has no value associated with it at all. Simple check: `if ( var == undefined )`.
   * **Undeclared:** a variable that's been created without the `var` keyword, and will usually operate on the global scope instead of any intended limited scope, such as a function. Will usually throw an error, or can be checked with `console.log(var)` to test returned value.
 * What is a closure, and how/why would you use one?
+  * A (closure)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures] is a function that have the same body and functions, but in different environments (different variable values). Two different closures may have the same functions and math, but one or more variables have different values. I would use them a similar function with specific different values would be needed - a simple example would be multiple functions that each add or subtract a specific number. Especially if each needs to maintain their environment stable and separate from each other. I already use something similar with how I containerize certain component's JS code, since it's very helpful for modular JS. So I would likely use closures the most for JS around pattern and component libraries.
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
 * What's the difference between host objects and native objects?
