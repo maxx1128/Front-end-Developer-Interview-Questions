@@ -239,6 +239,7 @@ This file contains a number of front-end interview questions that can be used wh
 * What is a closure, and how/why would you use one?
   * A (closure)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures] is a function that have the same body and functions, but in different environments (different variable values). Two different closures may have the same functions and math, but one or more variables have different values. I would use them a similar function with specific different values would be needed - a simple example would be multiple functions that each add or subtract a specific number. Especially if each needs to maintain their environment stable and separate from each other. I already use something similar with how I containerize certain component's JS code, since it's very helpful for modular JS. So I would likely use closures the most for JS around pattern and component libraries.
 * What's a typical use case for anonymous functions?
+  * A typical use case that I've also often used is for calculating and returning new values for variables. For example I'd start with variable A, and then use an anonymous function to create a new value, or array of values, that I'd save as variable B. I use anonymous functions for this unless I want to use it in other areas of the code as well.
 * How do you organize your code? (module pattern, classical inheritance?)
 * What's the difference between host objects and native objects?
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
@@ -261,7 +262,7 @@ This file contains a number of front-end interview questions that can be used wh
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
-1. Why is it called a Ternary expression, what does the word "Ternary" indicate?
+* Why is it called a Ternary expression, what does the word "Ternary" indicate?
 * What is `"use strict";`? what are the advantages and disadvantages to using it?
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
   ```javascript
