@@ -241,6 +241,7 @@ This file contains a number of front-end interview questions that can be used wh
 * What's a typical use case for anonymous functions?
   * A typical use case that I've also often used is for calculating and returning new values for variables. For example I'd start with variable A, and then use an anonymous function to create a new value, or array of values, that I'd save as variable B. I use anonymous functions for this unless I want to use it in other areas of the code as well.
 * How do you organize your code? (module pattern, classical inheritance?)
+  * I prefer to use the module pattern for the better organization, especially for more complex Javascript and is useful for Pattern Libraries. It's also similar to how I've written Javascript whenever I've used Node.JS, which makes it more familiar and uniform across the code I write.
 * What's the difference between host objects and native objects?
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * What's the difference between `.call` and `.apply`?
