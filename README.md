@@ -243,6 +243,7 @@ This file contains a number of front-end interview questions that can be used wh
 * How do you organize your code? (module pattern, classical inheritance?)
   * I prefer to use the module pattern for the better organization, especially for more complex Javascript and is useful for Pattern Libraries. It's also similar to how I've written Javascript whenever I've used Node.JS, which makes it more familiar and uniform across the code I write.
 * What's the difference between host objects and native objects?
+  * **Host Objects** are objects given based on how the site's being hosted, such as window width if it's a browser or info related to a Node.JS server being used. **Native Objects** are ones provided by Javascript, such as `Date` and `Math`, and Javascript makes natively available.
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * What's the difference between `.call` and `.apply`?
 * Explain `Function.prototype.bind`.
