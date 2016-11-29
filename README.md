@@ -245,6 +245,9 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between host objects and native objects?
   * **Host Objects** are objects given based on how the site's being hosted, such as window width if it's a browser or info related to a Node.JS server being used. **Native Objects** are ones provided by Javascript, such as `Date` and `Math`, and Javascript makes natively available.
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+  * `function Person(){}` is the standard way to declare and use a new function.
+  * `var person = Person()` also declares a function but does so inside a variable. This is mostly a syntax difference, but can allow for extra complexity.
+  * `var person = new Person()` is calling a function, and storing the output of that function in a variable. If `Person()` returns a value, that value will be stored in the `person` var. This makes it easier to create more variables or arrays with certain values, since the functions will do the work of calculating them.
 * What's the difference between `.call` and `.apply`?
 * Explain `Function.prototype.bind`.
 * When would you use `document.write()`?
