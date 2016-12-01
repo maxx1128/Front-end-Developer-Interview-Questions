@@ -252,6 +252,7 @@ This file contains a number of front-end interview questions that can be used wh
   * Both of them are ways to use function functions which [are called in the scope of the first argument given.](http://hangar.runway7.net/javascript/difference-call-apply) So if a function uses values from one variable that's out of its scope, both let that function be called as if that variable was within its scope.
   * The main difference is when adding additional arguments. `.call` requires the different arguments to be explicitly named and listed. `.apply` accepts a basic array that can contain any number of values.
 * Explain `Function.prototype.bind`.
+  * This is a method that sets the `'this'` value in a function to a provided value. So if we wanted to run a function while setting the `'this'` value at `x`, we would use `functionName.bind(x)`. This is great for [controlling values at the local scope of a function.](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
 * When would you use `document.write()`?
 * What's the difference between feature detection, feature inference, and using the UA string?
 * Explain AJAX in as much detail as possible.
