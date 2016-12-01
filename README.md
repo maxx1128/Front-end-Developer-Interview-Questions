@@ -249,6 +249,8 @@ This file contains a number of front-end interview questions that can be used wh
   * `var person = Person()` also declares a function but does so inside a variable. This is mostly a syntax difference, but can allow for extra complexity.
   * `var person = new Person()` is calling a function, and storing the output of that function in a variable. If `Person()` returns a value, that value will be stored in the `person` var. This makes it easier to create more variables or arrays with certain values, since the functions will do the work of calculating them.
 * What's the difference between `.call` and `.apply`?
+  * Both of them are ways to use function functions which [are called in the scope of the first argument given.](http://hangar.runway7.net/javascript/difference-call-apply) So if a function uses values from one variable that's out of its scope, both let that function be called as if that variable was within its scope.
+  * The main difference is when adding additional arguments. `.call` requires the different arguments to be explicitly named and listed. `.apply` accepts a basic array that can contain any number of values.
 * Explain `Function.prototype.bind`.
 * When would you use `document.write()`?
 * What's the difference between feature detection, feature inference, and using the UA string?
