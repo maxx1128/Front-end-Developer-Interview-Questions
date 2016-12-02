@@ -254,6 +254,7 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain `Function.prototype.bind`.
   * This is a method that sets the `'this'` value in a function to a provided value. So if we wanted to run a function while setting the `'this'` value at `x`, we would use `functionName.bind(x)`. This is great for [controlling values at the local scope of a function.](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
 * When would you use `document.write()`?
+  * `document.write()` has [few approved uses](http://lucybain.com/blog/2015/js-document-write/), due to several flaws: it doesn't work on XHTML pages, using it after page load overwrites the entire page, and isn't a fast way to load more assets into the DOM. Most often it's used for adding in 3rd-party code, such as ads, since it works independent of whatever Javascript code and events the site is running.
 * What's the difference between feature detection, feature inference, and using the UA string?
 * Explain AJAX in as much detail as possible.
 * Explain how JSONP works (and how it's not really AJAX).
