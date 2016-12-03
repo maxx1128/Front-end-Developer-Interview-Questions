@@ -1,6 +1,10 @@
 # Front-end Job Interview Questions
 
-<!-- https://quizlet.com/28293152/front-end-interview-questions-css-flash-cards/ -->
+<!--
+https://quizlet.com/28293152/front-end-interview-questions-css-flash-cards/
+
+http://lucybain.com/blog/tags/interview-questions/
+-->
 
 This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
 
@@ -256,6 +260,9 @@ This file contains a number of front-end interview questions that can be used wh
 * When would you use `document.write()`?
   * `document.write()` has [few approved uses](http://lucybain.com/blog/2015/js-document-write/), due to several flaws: it doesn't work on XHTML pages, using it after page load overwrites the entire page, and isn't a fast way to load more assets into the DOM. Most often it's used for adding in 3rd-party code, such as ads, since it works independent of whatever Javascript code and events the site is running.
 * What's the difference between feature detection, feature inference, and using the UA string?
+  * **Feature detection** is checking if a specific feature is supported in a browser before using it, such as flexbox, which is generally the preferred practice. One of the most popular tools for this is Modernizr.
+  * **Feature inference** is seeing if one feature is supported, and then making an inference off this that another one also is. However there may always be exceptions, which creates risk and is seen as a bad practice.
+  * **Using the UA string** means checking the user agent to see what specific browser and version a person is using, and basing your code off this. This also has risks, as future versions of browsers that you can't check for may or may not support certain features. Plus the UA string may not be written the same for all users, or it will change in the future.
 * Explain AJAX in as much detail as possible.
 * Explain how JSONP works (and how it's not really AJAX).
 * Have you ever used JavaScript templating?
