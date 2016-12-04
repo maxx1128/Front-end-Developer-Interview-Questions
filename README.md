@@ -264,6 +264,7 @@ This file contains a number of front-end interview questions that can be used wh
   * **Feature inference** is seeing if one feature is supported, and then making an inference off this that another one also is. However there may always be exceptions, which creates risk and is seen as a bad practice.
   * **Using the UA string** means checking the user agent to see what specific browser and version a person is using, and basing your code off this. This also has risks, as future versions of browsers that you can't check for may or may not support certain features. Plus the UA string may not be written the same for all users, or it will change in the future.
 * Explain AJAX in as much detail as possible.
+  * **Asynchronous JavaScript and XML** is a faster way to load more content to a webpage. Before, adding new HTML meant the entire page had to refresh. AJAX lets new HTML, which can include and respond to different data, load without refreshing the page. Now it's possible to charge large amount of the page's front-end with a much faster response time and with much more convenience.
 * Explain how JSONP works (and how it's not really AJAX).
 * Have you ever used JavaScript templating?
   * If so, what libraries have you used?
