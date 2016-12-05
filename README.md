@@ -266,6 +266,8 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain AJAX in as much detail as possible.
   * **Asynchronous JavaScript and XML** is a faster way to load more content to a webpage. Before, adding new HTML meant the entire page had to refresh. AJAX lets new HTML, which can include and respond to different data, load without refreshing the page. Now it's possible to charge large amount of the page's front-end with a much faster response time and with much more convenience.
 * Explain how JSONP works (and how it's not really AJAX).
+  * JSONP is an answer to the issue of getting data from other servers. AJAX normally just lets you query data from your own server. Devs can instead call this data using a script tag, similar to how they'd get Google webfonts. The script can then use a `callback` function to pull and manage the data for your own use. This explains the name **JSONP**, as the data is 'padded' in a callback function.
+  * This also explains why JSONP isn't technically AJAX - AJAX was made for requests in the same domain, while JSONP is from different domains.
 * Have you ever used JavaScript templating?
   * If so, what libraries have you used?
 * Explain "hoisting".
