@@ -358,6 +358,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```javascript
 var foo = 10 + '20';
 ```
+**Answer: 1020.** Because adding a value with a string, because they're different data types, will result in them just sticking together.
 
 *Question: How would you make this work?*
 ```javascript
