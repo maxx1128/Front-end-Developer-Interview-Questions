@@ -270,11 +270,17 @@ This file contains a number of front-end interview questions that can be used wh
   * This also explains why JSONP isn't technically AJAX - AJAX was made for requests in the same domain, while JSONP is from different domains.
 * Have you ever used JavaScript templating?
   * If so, what libraries have you used?
+  * **REVISIT THIS!**
 * Explain "hoisting".
+  * [Hoisting](http://lucybain.com/blog/2014/hoisting/) is when a variable or function declaration is "hoisted," or brought to the top of, its scope. So if a variable is used or defined before it gets declared, the JS interprets it to add a blank declaration to the top of the scope. This can override variables with the same name in the global scope, and variables are usually hoisted before functions are. This is all important to know since it can often change where a dev thinks their variables and functions are being declared.
 * Describe event bubbling.
+  * This is when the event triggered by one event "bubbles up" to above elements, triggering it for them as well. So a click event on some marked text will also activate a click event on all the parent and ancestor elements. A way to prevent this is using this code: `event.stopPropagation();`.
 * What's the difference between an "attribute" and a "property"?
+  * Properties are defined in the HTML DOM tree, while attributes are defined in the HTML file. This means that attributes will always return the default value through JS, while properties will show changed values. Plus, attributes can only be strings. For this reason, it's generally better practice to use properties, not attributes, whenever possible.
 * Why is extending built-in JavaScript objects not a good idea?
+  * Extending built-in JS objects depends heavily on the features already implemented in the browser, which risks these features changing or being removed in the future. Therefore not extending built-in objects adds stability and doesn't risk any silent browser updates throwing an entire site or app into sudden disarray. 
 * Difference between document load event and document ready event?
+  * `doc ready` fires when all the HTML has finished loading, and `doc load` fires when all the content on the page has finished loading, such as images and CSS. This makes the latter much slower to kick in, but useful if the JS specifically refers to content that needs to load first.
 * What is the difference between `==` and `===`?
 * Explain the same-origin policy with regards to JavaScript.
 * Make this work:
