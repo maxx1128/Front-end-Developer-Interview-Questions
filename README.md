@@ -282,7 +282,12 @@ This file contains a number of front-end interview questions that can be used wh
 * Difference between document load event and document ready event?
   * `doc ready` fires when all the HTML has finished loading, and `doc load` fires when all the content on the page has finished loading, such as images and CSS. This makes the latter much slower to kick in, but useful if the JS specifically refers to content that needs to load first.
 * What is the difference between `==` and `===`?
+  - `==` checks if the values are equal, while `===` checks if the values and type of value are equal. So `1 == '1` would return true, since the values are equal despite being different types (number and string). However `1 === '1'` would be false unless the first value became a string, or the second became a number.
 * Explain the same-origin policy with regards to JavaScript.
+  * The same-origin policy is for security, to ensure that no malicious code from other sites is executed on another. It defines the origin as being the same if the sites have the same:
+    1) Security protocol (https, for example)
+    2) Domain name
+    3) Port number 
 * Make this work:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
