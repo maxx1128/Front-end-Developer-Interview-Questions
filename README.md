@@ -295,6 +295,8 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * Why is it called a Ternary expression, what does the word "Ternary" indicate?
   * A Ternary expression is an operation is an operan that accepts three parameters. The ternary syntax for Javascript breaks this into the condition, the action if the condition is true, and the action if the condition is false. A simple example of a ternary expression is `2 > 1 ? 'true' : 'false'`. Since two is greater than one, this operation returns the `'true'` string, not the `'false'` one. They can also incorporate variables and be used as conditionals for assigning variable values. Best used with less complex logic.
 * What is `"use strict";`? what are the advantages and disadvantages to using it?
+  * Putting this above any code evaluates it in "Strict Mode," which throws additional errors to enforce code using better practices, such as throwing errors when access to the global object, or simply disabling confusing JS features.
+  * The obvious advantages are better enforcement of clearer, more robust JS. The disadvantages are less, mainly that mixing strict and non-strict modes can lead to confusion, and some developers may be more reliant, or have code that's already more reliant, on certain features that would no longer be allowed.
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
   ```javascript
   function isFizz(num) {
