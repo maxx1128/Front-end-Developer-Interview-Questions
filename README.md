@@ -324,6 +324,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
   }
   ```
 * Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+  * Avoiding the global scope is generally a good practice for several reasons, and the common theme is structure. Having variables in the global scope usually makes them harder to organize and more likely to have name clashes and overrides. It's simply more practical to limit the scope to where it's needed to avoided any unneeded consequences like above. JS global variables are particularly important, since unless variables are properly defined in a certain scope, they default to global scope. So ensuring no global variables is of special importance since it's more likely to happen by accident.
 * Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
 * Explain what a single page app is and how to make one SEO-friendly.
 * What is the extent of your experience with Promises and/or their polyfills?
