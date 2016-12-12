@@ -330,7 +330,10 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * Explain what a single page app is and how to make one SEO-friendly.
   * A SPA is a web application that works on a single HTML files that updates as the user interacts with it. Instead of going to different pages for login, profile, and other content, they all appear on the same page and load with techniques such as AJAX for a smooth user experience. Ways to [improve the SEO for these](https://www.getambassador.com/blog/single-page-webapp-seo) include more focused URLs, caching your site's content, and indexing all your pages in a sitemap.
 * What is the extent of your experience with Promises and/or their polyfills?
+  * RETURN TO THIS
 * What are the pros and cons of using Promises instead of callbacks?
+  * The [main difference between promises and callbacks](https://www.quora.com/Whats-the-difference-between-a-promise-and-a-callback-in-Javascript) is that, when making different calls for values, a promise is a proxy value not known when used - when the value arrives, or the promise is fulfilled, then the next step is executed.
+  * The main benefits of promises are that the code is often written cleaner and simpler, and is better for asynchronous operations (since there's no need to nest a great amount of callbacks). However, callbacks are best used for short, local reactions since there's no data being managed or that needs a placeholder.
 * What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
 * What tools and techniques do you use debugging JavaScript code?
 * What language constructions do you use for iterating over object properties and array items?
