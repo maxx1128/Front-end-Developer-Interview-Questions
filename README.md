@@ -335,6 +335,8 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
   * The [main difference between promises and callbacks](https://www.quora.com/Whats-the-difference-between-a-promise-and-a-callback-in-Javascript) is that, when making different calls for values, a promise is a proxy value not known when used - when the value arrives, or the promise is fulfilled, then the next step is executed.
   * The main benefits of promises are that the code is often written cleaner and simpler, and is better for asynchronous operations (since there's no need to nest a great amount of callbacks). However, callbacks are best used for short, local reactions since there's no data being managed or that needs a placeholder.
 * What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+  * [Advantages:](http://buildnewgames.com/compiling-to-javascript/) static and strong typing which help maintainability in large codebases, easier debugging, static analysis for better organization.
+  * Disadvantages: adds an extra step in compiling, lower performance speed, added complexity if the new syntax isn't fully understood.
 * What tools and techniques do you use debugging JavaScript code?
 * What language constructions do you use for iterating over object properties and array items?
 * Explain the difference between mutable and immutable objects.
