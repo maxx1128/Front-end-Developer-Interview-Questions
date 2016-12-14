@@ -344,6 +344,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
   * What are the pros and cons of immutability?
   * How can you achieve immutability in your own code?
 * Explain the difference between synchronous and asynchronous functions.
+  * Synchronous functions block the next function in line until the next one is complete. Asynchronous ones will process in the background while the next function is also processed.
 * What is event loop?
   * What is the difference between call stack and task queue?
 
