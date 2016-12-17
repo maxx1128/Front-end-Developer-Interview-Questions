@@ -338,6 +338,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
   * [Advantages:](http://buildnewgames.com/compiling-to-javascript/) static and strong typing which help maintainability in large codebases, easier debugging, static analysis for better organization.
   * Disadvantages: adds an extra step in compiling, lower performance speed, added complexity if the new syntax isn't fully understood.
 * What tools and techniques do you use debugging JavaScript code?
+  * My most used technique to debugging Javascript is simply using console.log to keep track of expected values and operations through the browser and spot any errors. This recently helped me debug an issue with a component that was supposed to fix an element on certain screen positions by telling me how and when the conditions to trigger it were being missed. Otherwise I use [JSHint](http://jshint.com/) as an external checker.
 * What language constructions do you use for iterating over object properties and array items?
 * Explain the difference between mutable and immutable objects.
   * What is an example of an immutable object in JavaScript?
