@@ -340,6 +340,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * What tools and techniques do you use debugging JavaScript code?
   * My most used technique to debugging Javascript is simply using console.log to keep track of expected values and operations through the browser and spot any errors. This recently helped me debug an issue with a component that was supposed to fix an element on certain screen positions by telling me how and when the conditions to trigger it were being missed. Otherwise I use [JSHint](http://jshint.com/) as an external checker.
 * What language constructions do you use for iterating over object properties and array items?
+  * I would use [For Loops](http://www.2ality.com/2011/04/iterating-over-arrays-and-objects-in.html), since it has different syntaxes for iterating over objects and properties for different situations such as stopping the loop when a condition is met or returning a functioning for each item. There are also different array functions such as `forEach`, `every` and `some`, but I'm not too familiar with them yet.
 * Explain the difference between mutable and immutable objects.
   * What is an example of an immutable object in JavaScript?
   * What are the pros and cons of immutability?
